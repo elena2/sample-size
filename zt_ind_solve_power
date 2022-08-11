@@ -1,0 +1,12 @@
+from statsmodels.stats.proportion import proportion_effectsize
+from statsmodels.stats.power import zt_ind_solve_power
+
+std_effect = proportion_effectsize(.03, .04)
+
+#difference is so small, u need a larger sample size to prove the dif is sig
+
+alpha=.20
+power = 0.75
+effect_size = std_effect
+
+zt_ind_solve_power(effect_size=effect_size, nobs1=None, alpha=alpha, power=power)
