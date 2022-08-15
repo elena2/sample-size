@@ -1,3 +1,5 @@
+# Using Python package - statsmodels - to solve for sample size in a Z Test. 
+
 from statsmodels.stats.proportion import proportion_effectsize
 from statsmodels.stats.power import zt_ind_solve_power
 
